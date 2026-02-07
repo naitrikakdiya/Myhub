@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Enrolment</title>
+       <style>
+            *{
+                 margin: 0;
+                padding:0;
+            }
+            body{
+                text-align: center;
+                font-family: Arial, sans-serif;
+                background-color:  #f4f4f4;
+            }
+            header{
+                background-color:rgb(118, 192, 217);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 10px;
+            }
+             nav a {
+                color: white;
+                margin: 8px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                background-color: #0e647e;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            main{
+                background-color:rgb(250, 248, 248);
+                border-radius: 10px;
+                margin-top: -50px;
+            }
+               
+            .e1{
+                background-color:rgb(118, 192, 217) ;
+                margin-top: 10px;
+                border-radius: 10px;
+                padding: 20px; 
+                margin: 55px;
+                margin-bottom: -55px;
+                padding-left: 10px;
+            }
+            .e2{
+                background-color:rgb(198, 204, 206) ;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 55px;
+                margin-bottom: 15px;    
+                        
+            }
+            fieldset{
+                border: 1px solid black;
+                padding: 20px;
+                text-align: left;
+                
+            }
+            legend{
+                font-weight: bold;
+            }
+            input{
+                padding: 10px;
+                border-radius: 5px;
+                padding-left: 30px;
+                text-align: left;
+            } 
+            select{
+                padding: 10px;
+                border-radius: 5px;
+                width:300px;           
+            }
+            textarea{
+                width:400px;
+                margin-bottom: 10px;
+            }
+            button{
+               width: 300px;
+               padding: 10px;
+               background-color:rgb(118, 192, 217); ;
+               margin:30px;
+               border-radius: 5px;
+               transition: 0.5s;
+               animation: bounceIn 3s ease-in-out;
+
+            }
+            button:hover{
+                background-color: #5cc7e8;
+                 transition: scale(1.05);
+                box-shadow:  5px 5px 5px 5px rgb(61, 57, 57);
+            }
+            footer{
+                background-color:  rgb(51, 59, 113);
+                color: #f9f9f9;
+                text-align: center;
+                margin: 8px;
+                padding: 20px;
+                margin-top:10px;
+                border-radius: 5px;
+            }
+            footer span{
+                color: #99ca08;                                                                                                                                                                                                                             
+            }       
+       </style>
+</head>
+<body>
+     <header>
+        <h2>&#128214;LearnHub</h2>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="courses.html">Courses</a> 
+            <a href="enrolment.html">Enrolment</a> 
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+    <form>
+    <main>
+        <div class="e1">
+            <h2>Course Enrollment</h2>
+            <p>Fill out this form</p>
+        </div>
+        <div class="e2">
+          <fieldset>
+             <legend >&#128203;Personal Information</legend>
+
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Enter your Name">  <br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" placeholder="Enter your email">  <br><br>
+
+            <label>Phone Number</label><br>
+            <input type="text" placeholder="+91 1234567890">  <br><br>
+
+            <label>Date of Birth</label><br>
+            <input type="date"><br><br>
+            </fieldset>
+            <fieldset>
+             <legend >&#127891;Education Infromation</legend ><br>
+
+             <label>Highest Qualification </label><br>
+             <select>
+                <option>High school</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD</option>
+             </select><br><br>
+
+            <label>Do you have any Programming experience?</label><br> 
+            <input type="radio"  >Yes
+            <input type="radio">No<br><br>
+          </fieldset>
+          <fieldset>
+         
+          
+           <legend >&#128218;Course Selection</legend>
+
+            <label> Select Course </label><br>
+             <select>
+                <option>Web Development</option>
+                <option>Python Programming</option>
+                <option>Data Science</option>
+                <option>Mobile Development</option>
+                <option>UI/UX Design</option>
+                <option>AI & ML</option>
+             </select><br><br>
+
+            <label>Why do you want to take this course?</label><br>
+            <textarea rows="5" cols="40" placeholder="Tell us about your goals"></textarea><br>
+            <input type="checkbox">I agree to the terms & conditions and privacy Policy<br>                    
+             <button>Complete Enrollment</button>         
+         </fieldset>          
+        </main>
+    </form>
+     <footer>
+        <p>© LearnHub. All rights reserved.</p> 
+        <p>Email:<span>naitrikakdiya@gmail.com</span> | Phone: +91 6351174082 </p> 
+    </footer>
+    
+</body>
+</html>

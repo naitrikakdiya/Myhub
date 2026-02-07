@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Contact</title>
+    <style>
+        *{
+                margin: 0;
+                padding:0;
+            }
+            body{
+                
+                font-family: Arial, sans-serif;
+                background-color:  #f4f4f4;
+            }
+            header{
+                background-color:rgb(118, 192, 217);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 10px;
+            }
+             nav a {
+                color: white;
+                margin: 8px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                background-color: #0e647e;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            main{
+                background-color: #f4f4f4;
+                padding: 20px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                gap:5px;
+            }
+            .p1{
+                background-color: #e09773;;    
+                border-radius: 10px;
+                border: 1px solid gray; 
+                height: auto; 
+                width: auto;
+                text-align: justify;  
+                padding: 20px; 
+                
+              }
+              .p2{
+                background-color: #e09773;
+                border-radius: 10px;
+                border: 1px solid gray;
+                height: auto; 
+                width: auto;
+                padding: 10px;
+             
+              }
+              .c1{
+                    box-sizing: border-box;                 
+                    background-color: #dde0d5;
+                    padding-top: 5px;
+                    width:auto;
+                    border: none;
+                    border-radius: 10px;
+                    margin: 10px;
+                    padding:20px;
+                    transition: 0.5s;
+                    animation: bounceIn 3s ease-in-out;
+              }
+                .c1:hover{
+                    background-color: #ebc198;
+                    transition: scale(1.05);
+                    box-shadow:  5px 5px 5px 5px rgb(61, 57, 57);
+                 }
+             .form-group{
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    padding-top: 20px;
+                   
+              }
+              input{
+                padding: 8px;
+                border-radius: 5px;
+                width:200px;
+              }
+              select{
+                padding: 8px;
+                border-radius: 5px;
+                width:200px;
+              }
+              textarea{
+                 padding: 8px;
+                border-radius: 5px;
+              }
+              span{
+                color:blue;
+              }
+              button{
+                 width:300px;
+                 padding: 10px;
+                 border-radius:5px;
+                 background-color:rgb(118, 192, 217);
+                 transition: 0.5s;
+                 animation: bounceIn 3s ease-in-out;
+                }
+              button:hover{
+                background-color:#43c9f2;
+                transition: scale(1.05);
+                box-shadow:  5px 5px 5px 5px rgb(61, 57, 57);
+             }
+            footer{
+                background-color:  rgb(51, 59, 113);
+                color: #f9f9f9;
+                text-align: center;
+                margin: 8px;
+                padding: 20px;
+                margin-top:10px;
+                border-radius: 5px;
+            }
+            footer span{
+                color: #99ca08;                                                                                                                                                                                                                             
+            } 
+            footer span:hover{
+                background-color: black;
+            }    
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h2>&#128214;LearnHub</h2>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="courses.html">Courses</a> 
+            <a href="enrolment.html">enrolment</a> 
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+    <main>
+        <div class="p1">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? We'd love to hear from you.Send us a message and we'll response as soon as possible.</p>
+              
+                        <div class="c1">
+                                <strong>📧Email</strong><br>
+                                <span>naitrikakdiya@gmail.com</span><br>
+                                <span>support@learnhub.com</span>
+                        </div>
+                        <div class="c1">
+                                <strong>📞Phone</strong><br>
+                                <p>+91 6351174082<br>Mon-Fri 9am-6pm</p>
+                        </div>
+                        <div class="c1">  
+                                <strong>📍Address</strong><br>
+                                <p>LambeyHanuman,<br>sardarnagar,Bhavnagar,<br>Gujrat,India-634002</p>
+                        </div>
+                        <div class="c1">
+                                <strong>⏰Business Hours</strong><br>
+                                <p>Monday-Friday: 9:00AM to 6:00PM<br> Saturday:10:00 Am to 4:00 PM<br> Sunday:closed</p>
+                        </div>
+  
+        </div>
+        <div class="p2">
+             <form>
+                    <h2>Send Us a Message</h2>
+                    <div class="form-group">
+                        <label for="name">Your Name</label><br>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label><br>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Subject</label><br>
+                        <select>
+                            <option>select subject</option>
+                            <option>General Inquiry</option>
+                            <option>Course Infromation</option>
+                            <option>Technical Support</option>
+                            <option>Feedback</option> 
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label><br>
+                        <textarea  id="Message" rows="5" cols="30" placeholder="Write your massege here"></textarea>
+                    </div>
+                    <button>Send Message</button>
+             </form>
+        </div>
+    </main>
+           
+               
+    <footer>
+        <p>© LearnHub. All rights reserved.</p> 
+        <p>Email:<span>naitrikakdiya@gmail.com</span> | Phone: +91 6351174082 </p> 
+    </footer>    
+</body>
+</html>
